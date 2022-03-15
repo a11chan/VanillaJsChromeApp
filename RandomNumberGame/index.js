@@ -3,8 +3,6 @@ playBtn.addEventListener("click", checkInput);
 
 let maxRandomNumber;
 let yourPick;
-let maxRandomNumberToInteger;
-let randomNumber;
 
 const MAX_RANDOM_NUMBER = ".maxRandomNumber"
 const YOUR_PICK = ".yourPick"
@@ -45,6 +43,9 @@ function gameStart() {
   console.log(`yourPick = ${yourPick}`);
   console.log(`randomNumber = ${randomNumber}`);
 }
+
+let maxRandomNumberToInteger;
+let randomNumber;
 
 function getRandomNumber() {
   maxRandomNumberToInteger = Math.floor(Math.random() * Math.pow(10,maxRandomNumber.toString().length));
