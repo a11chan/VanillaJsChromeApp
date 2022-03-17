@@ -41,10 +41,6 @@ function showClock() {
   const eachTimeUnitText = setDigit(eachTimeToDday);
   
   setClockText(eachTimeUnitText);
-  
-  console.log(timesLeftToSecond);
-  console.log(eachTimeToDday);
-  console.log(eachTimeUnitText);
 }
 
 showClock();
