@@ -12,9 +12,23 @@
     <input type="text" required maxlength=15 placeholder="Please write your name">
     <button>Log In</button>
   </form>
+
   <h2 id="clock">00:00:00</h2>
   <h1 id="greeting" class="hidden"></h1>
+
+  <form id="toDo-form">
+    <input type="text" placeholder="Write a To Do and Press Enter" required>
+  </form>
+  <ul id="toDo-list">
+    <!-- li will added by JS -->
+  </ul>
+
   <div id="quote">
+    <span></span>
+    <span></span>
+  </div>
+
+  <div id="weather">
     <span></span>
     <span></span>
   </div>
@@ -23,5 +37,7 @@
   <script src="./js/clock.js"></script>
   <script src="./js/quotes.js"></script>
   <script src="./js/background.js"></script>
+  <script src="./js/toDo.js"></script>
+  <script src="./js/weather.js"></script>
 </body>
 </html>

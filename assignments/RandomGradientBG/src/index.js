@@ -46,6 +46,10 @@ function changeBg () {
   const colorRandomNumber2 = getColorRandomNumber();
   const colorCode1 = getColorCode(colorRandomNumber1);
   const colorCode2 = getColorCode(colorRandomNumber2);
+  if (colorCode1 === colorCode2) {
+    return changeBg();
+  }
+
   const body = document.querySelector("body");
   body.style.background = `linear-gradient(to right, ${colorCode1}, ${colorCode2})`;
 
